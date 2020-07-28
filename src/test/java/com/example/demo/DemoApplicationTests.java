@@ -21,6 +21,14 @@ class DemoApplicationTests {
 		assertTrue (basket.getBasketContents().containsKey("Milk"));
 	}
 
+	@Test
+	void getTotalOnOneItem() {
+		Basket basket = new Basket();
+		basket.addToBasket("Milk");
+		double total = basket.getTotal();
+		System.out.println(total);
+	}
+
 	// Test each item, multiple stacks of one, multiple items, and their stacks, and totals
 
 	// test invalid input (assert "item not in stock")

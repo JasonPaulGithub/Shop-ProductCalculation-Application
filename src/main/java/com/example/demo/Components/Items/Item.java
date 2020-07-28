@@ -12,6 +12,8 @@ public class Item {
         this.price = price;
     }
 
+    public Integer getStack() { return stack; }
+
     public double getPrice() {
         return price;
     }
@@ -20,14 +22,14 @@ public class Item {
         return name;
     }
 
+    public boolean promotion(){
+        return false;
+    }
+
     public void increaseStack() {
         this.stack++;
         System.out.println(stack);
-        checkPromotion();
-    }
-
-    public void checkPromotion(){
-        System.out.println("check promotion");
+        promotion();
     }
 
 }

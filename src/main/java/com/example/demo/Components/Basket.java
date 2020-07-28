@@ -4,18 +4,25 @@ import com.example.demo.Components.Items.Item;
 
 import java.util.*;
 
-public class Basket{
+public class Basket {
+
+    Map<String, Item> basketContents = new HashMap<>();
 
     public Map<String, Item> getBasketContents() {
         return basketContents;
     }
 
-    Map<String, Item> basketContents = new HashMap<>();
-
-    public void addToBasket(String itemName){
+    public void addToBasket(String itemName) {
         Store store = Store.getInstance();
         basketContents = store.getFromShelf(itemName, basketContents);
     }
 
+    public double getTotal() {
 
+        double runningTotal = 0;
+
+        for (Map.Entry<String, Item> entry : basketContents.entrySet())
+            runningTotal += entry.getValue().getPrice();
+        return runningTotal;
+    }
 }
