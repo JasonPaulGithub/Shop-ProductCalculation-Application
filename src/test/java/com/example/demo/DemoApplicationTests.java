@@ -7,8 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class DemoApplicationTests {
 
-	// TODO: No need for UI, just input values via tests
-
 	@Test
 	void contextLoads() {
 	}
@@ -19,6 +17,8 @@ class DemoApplicationTests {
 		basket.addToBasket("Milk");
 		// Assert milk is in the basket
 	}
+
+	// Test each item, multiple stacks of one, multiple items, and their stacks, and totals
 
 	// test invalid input (assert "item not in stock")
 
