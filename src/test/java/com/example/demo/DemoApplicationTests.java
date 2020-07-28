@@ -39,8 +39,10 @@ class DemoApplicationTests {
     void testApplePromotion() {
         Basket basket = new Basket();
         basket.addToBasket("Apples");
+        basket.addToBasket("Apples");
+        basket.addToBasket("Apples");
         double total = basket.getTotal();
-        assertTrue(total == 0.90);
+        assertTrue(total == 2.70);
     }
 
 
