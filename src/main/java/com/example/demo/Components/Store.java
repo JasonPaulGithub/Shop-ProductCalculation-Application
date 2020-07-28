@@ -21,7 +21,6 @@ public class Store {
 
     public  Map<String, Item> getFromShelf(String itemName, final  Map<String, Item> basket) {
         Map<String, Item> newBasket = basket;
-        double price = stock.get(itemName).getPrice();
 
         if (checkStock(itemName)) {
             if (!basket.containsKey(itemName)) {
@@ -32,14 +31,14 @@ public class Store {
                 newBasket.get(itemName).increaseStack();
             }
         } else {
-            // throw "Item not in stock" with an optional null
+            System.out.println("Item not in stock.");
+            return newBasket;
         }
         return newBasket;
     }
 
     private Item newItem(String item, Integer stack, double price) {
-        Item newItem = new Item(item, stack, price);
-        return newItem;
+        return new Item(item, stack, price);
     }
 
     public boolean checkStock(String item) {

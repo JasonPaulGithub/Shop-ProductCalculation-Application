@@ -10,7 +10,7 @@ public class ApplesPromotion extends Item implements Promotion {
 
     @Override
     public void condition() {
-        //
+
     }
 
     @Override
