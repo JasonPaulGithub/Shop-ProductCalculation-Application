@@ -28,7 +28,6 @@ public class Item {
 
     public void increaseStack() {
         this.stack++;
-        System.out.println(stack);
         promotion();
     }
 

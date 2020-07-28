@@ -25,8 +25,9 @@ class DemoApplicationTests {
 	void getTotalOnOneItem() {
 		Basket basket = new Basket();
 		basket.addToBasket("Milk");
+		basket.addToBasket("Milk");
 		double total = basket.getTotal();
-		System.out.println(total);
+		System.out.println("total " + total);
 	}
 
 	// Test each item, multiple stacks of one, multiple items, and their stacks, and totals

@@ -18,9 +18,7 @@ public class Basket {
     }
 
     public double getTotal() {
-
         double runningTotal = 0;
-
         for (Map.Entry<String, Item> entry : basketContents.entrySet())
             runningTotal += entry.getValue().getPrice();
         return runningTotal;
