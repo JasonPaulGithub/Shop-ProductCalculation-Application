@@ -12,23 +12,12 @@ public class Item {
         this.price = price;
     }
 
-    public Integer getStack() { return stack; }
-
     public double getPrice() {
-        return price;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public boolean promotion(){
-        return false;
+        return price * stack;
     }
 
     public void increaseStack() {
         this.stack++;
-        promotion();
     }
 
 }

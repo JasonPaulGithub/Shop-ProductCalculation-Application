@@ -1,39 +1,51 @@
 package com.example.demo;
 
 import com.example.demo.Components.Basket;
-import com.example.demo.Components.Items.Item;
 import org.junit.jupiter.api.Test;
-
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class DemoApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void addItem() {
+        Basket basket = new Basket();
+        basket.addToBasket("Milk");
+        assertTrue(basket.getBasketContents().containsKey("Milk"));
+    }
 
-	@Test
-	void addItem() {
-		Basket basket = new Basket();
-		basket.addToBasket("Milk");
-		assertTrue (basket.getBasketContents().containsKey("Milk"));
-	}
+    @Test
+    void getTotalOnTwoItems() {
+        Basket basket = new Basket();
+        basket.addToBasket("Milk");
+        basket.addToBasket("Milk");
+        double total = basket.getTotal();
+        assertTrue(total == 2.60);
+    }
 
-	@Test
-	void getTotalOnOneItem() {
-		Basket basket = new Basket();
-		basket.addToBasket("Milk");
-		basket.addToBasket("Milk");
-		double total = basket.getTotal();
-		System.out.println("total " + total);
-	}
 
-	// Test each item, multiple stacks of one, multiple items, and their stacks, and totals
+    @Test
+    void testBreadPromotion() {
+        Basket basket = new Basket();
+        basket.addToBasket("Soup");
+        basket.addToBasket("Soup");
+        basket.addToBasket("Soup");
+        basket.addToBasket("Bread");
+        double total = basket.getTotal();
+        assertTrue(total == 2.35);
+    }
 
-	// test invalid input (assert "item not in stock")
+    @Test
+    void testApplePromotion() {
+        Basket basket = new Basket();
+        basket.addToBasket("Apples");
+        double total = basket.getTotal();
+        assertTrue(total == 0.90);
+    }
 
-	// test price and promotions
+
+    // Test each item, multiple stacks of one, multiple items, and their stacks, and totals
+    // test invalid input (assert "item not in stock")
+    // test price and promotions
 
 }
