@@ -19,22 +19,21 @@ public class Store {
     }
 
     public  Map<String, Item> getFromShelf(String itemName, final  Map<String, Item> basket) {
-        Map<String, Item> newBasket = basket;
 
         if (checkStock(itemName)) {
             if (!basket.containsKey(itemName)) {
                 // newBasket gets a new item
-                newBasket.put(itemName, stock.get(itemName));
+                basket.put(itemName, stock.get(itemName));
             } else {
                 // increment stack of item in basket
-                newBasket.get(itemName).increaseStack();
+                basket.get(itemName).increaseStack();
             }
         } else {
             System.out.println("Item not in stock.");
-            return newBasket;
+            return basket;
         }
 
-        return newBasket;
+        return basket;
     }
 
     private Item newItem(String item, Integer stack, double price) {
@@ -52,10 +51,14 @@ public class Store {
         inStock.put("Soup", newItem("Soup", 1, 0.65));
         inStock.put("Milk", newItem("Milk", 1, 1.30));
         inStock.put("Bread",newItem("Bread", 1, 0.80));
+        inStock.put("Apples",newItem("Apples", 1, 1.00));
 
-        // Promotion on Items
-        Item applePromotion = new ApplesItemPromotion("Apples", 1, 1.00);
-        inStock.put("Apples", applePromotion);
+        // Here is how to put a Promotion on individual items before it is send to the basket.
+        // It wasn't asked for but I wanted to keep it in, just for fun.
+
+        // Promotional Items
+        //Item applePromotion = new ApplesItemPromotion("Apples", 1, 1.00);
+        //inStock.put("Apples", applePromotion);
 
         return Collections.unmodifiableMap(inStock);
     }

@@ -26,8 +26,10 @@ public class Basket extends Soup_BreadPromotion {
             runningTotal += entry.getValue().getPrice();
         }
 
+        System.out.println("Subtotal: " + runningTotal);
         runningTotal = applyBasketPromotion(basketContents,runningTotal);
         System.out.println("Total: £" + runningTotal);
+        System.out.println("----------------------------------");
         return runningTotal;
     }
 }
