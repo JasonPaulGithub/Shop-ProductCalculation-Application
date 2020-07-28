@@ -1,10 +1,13 @@
 package com.example.demo;
 
 import com.example.demo.Components.Basket;
+import com.example.demo.Components.Items.Item;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 class DemoApplicationTests {
 
 	@Test
@@ -12,10 +15,10 @@ class DemoApplicationTests {
 	}
 
 	@Test
-	void testMilk() {
+	void addItem() {
 		Basket basket = new Basket();
 		basket.addToBasket("Milk");
-		// Assert milk is in the basket
+		assertTrue (basket.getBasketContents().containsKey("Milk"));
 	}
 
 	// Test each item, multiple stacks of one, multiple items, and their stacks, and totals
