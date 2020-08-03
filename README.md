@@ -2,9 +2,9 @@
 
 Below is my submission for a coding assessment for a company called BJSS. 
 
-The feedback provided was quite frankly - very poor.
+The quality of my feedback was quite frankly - very unhelpful.
 
-I would really appreciate some feedback so I can improve my skills. Thank you!
+I would really appreciate some useful feedback so I can improve my skills. Thank you!
 
 Jason
 
