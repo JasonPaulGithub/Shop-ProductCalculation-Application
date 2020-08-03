@@ -2,10 +2,9 @@
 
 Below is my submission for a coding assessment for a company called BJSS. 
 
-The feedback provided was quite frankly - terrible.
+The feedback provided was quite frankly - very poor.
 
-To improve my skills please read the criteria below and take a look at my code. 
-I will be happy for any feedback. Thanks!
+I would really appreciate some feedback so I can improve my skills. Thanks you!
 
 Jason
 
