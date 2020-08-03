@@ -11,8 +11,11 @@ Write a program and  associated unit tests that can price a basket of goods, acc
 The goods that can be purchased, which are all priced in GBP, are:
 
 Soup – 65p per tin
+
 Bread – 80p per loaf
+
 Milk – £1.30 per bottle
+
 Apples – £1.00 per bag
 
 Current special offers are:
@@ -25,7 +28,9 @@ The program should accept a list of items in the basket and output the subtotal,
 Input should be via the command line in the form of PriceBasket item1 item2 item3 ...
 
 For example:
-PriceBasket Apples Milk Bread
+
+PriceBasket 
+Apples Milk Bread
 
 Output should be to the console, for example:
 Subtotal: £3.10 Apples 10% off: -10p 
