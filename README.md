@@ -3,7 +3,7 @@
 
 Below is my submission for a coding assessment for a company called BJSS.
 
-The quality of my feedback was quite frankly, very unhelpful.
+The quality of my feedback was quite frankly, very unhelpful and unclear.
 
 I would really appreciate some useful feedback so I can improve my skills. Thank you!
 
