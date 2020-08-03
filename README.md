@@ -1,6 +1,6 @@
 "# bjss" 
 
-Below is my submission for a coding assessment for a company called BJSS. The feedback provided was quite frankly, poor.
+Below is my submission for a coding assessment for a company called BJSS. The feedback provided was quite frankly - terrible.
 To improve my skills please read the criteria below and take a look at my code. I will be happy for any feedback. Thanks!
 Jason
 
