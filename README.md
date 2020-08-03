@@ -4,7 +4,7 @@ Below is my submission for a coding assessment for a company called BJSS.
 
 The feedback provided was quite frankly - very poor.
 
-I would really appreciate some feedback so I can improve my skills. Thanks you!
+I would really appreciate some feedback so I can improve my skills. Thank you!
 
 Jason
 
