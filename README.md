@@ -10,10 +10,10 @@ NOTE: There is no CLI but the unit tests will contain everything you need. Good 
 Write a program and  associated unit tests that can price a basket of goods, accounting for special offers.
 The goods that can be purchased, which are all priced in GBP, are:
 
-Soup–65p per tin
-Bread –80p per loaf
-Milk –£1.30 per bottle
-Apples –£1.00 per bag
+Soup – 65p per tin
+Bread – 80p per loaf
+Milk – £1.30 per bottle
+Apples – £1.00 per bag
 
 Current special offers are:
 
