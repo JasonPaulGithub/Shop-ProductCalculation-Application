@@ -1,15 +1,4 @@
-# bjss
-"# bjss"
-
-Below is my submission for a coding assessment for a company called BJSS.
-
-The quality of my feedback was quite frankly, very unhelpful and unclear.
-
-I would really appreciate some useful feedback so I can improve my skills. Thank you!
-
-Jason
-
-NOTE: There is no CLI but the unit tests will contain everything you need. Good luck!
+There is no CLI but the unit tests will contain everything you need.
 Write a program and associated unit tests that can price a basket of goods, accounting for special offers. The goods that can be purchased, which are all priced in GBP, are:
 
 Soup – 65p per tin
